@@ -14,6 +14,7 @@ interface Regiment {
   specialties: string[];
   famousBattles: string[];
   motto: string;
+  imageUrl?: string;
 }
 
 const regiments: Regiment[] = [
@@ -23,7 +24,8 @@ const regiments: Regiment[] = [
     description: "The land-based branch of the Indian Armed Forces",
     specialties: ["Infantry", "Armoured Corps", "Artillery", "Engineers", "Signals"],
     famousBattles: ["Battle of Longewala", "Battle of Srinagar", "Tiger Hill"],
-    motto: "Service Before Self"
+    motto: "Service Before Self",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     name: "Para Special Forces",
@@ -31,7 +33,8 @@ const regiments: Regiment[] = [
     description: "India's elite special forces unit",
     specialties: ["Counter-terrorism", "Unconventional Warfare", "Special Reconnaissance"],
     famousBattles: ["Operation Vijay", "Surgical Strikes 2016"],
-    motto: "Men of Steel"
+    motto: "Men of Steel",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     name: "Gorkha Regiment",
@@ -39,7 +42,8 @@ const regiments: Regiment[] = [
     description: "Famous for their bravery and loyalty",
     specialties: ["Mountain Warfare", "High Altitude Operations"],
     famousBattles: ["Battle of Kashmir 1947", "Kargil War"],
-    motto: "Better to Die than to be a Coward"
+    motto: "Better to Die than to be a Coward",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     name: "Sikh Regiment",
@@ -47,7 +51,8 @@ const regiments: Regiment[] = [
     description: "One of the oldest and most decorated regiments",
     specialties: ["Armored Warfare", "Infantry Operations"],
     famousBattles: ["Battle of Basantar 1971", "1947-48 Kashmir"],
-    motto: "Nischay Kar Apni Ijmma Karo"
+    motto: "Nischay Kar Apni Ijmma Karo",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   },
   {
     name: "Rajput Regiment",
@@ -55,7 +60,8 @@ const regiments: Regiment[] = [
     description: "Known for their martial traditions",
     specialties: ["Desert Warfare", "Mountain Warfare"],
     famousBattles: ["Battle of Tithwal", "Kargil Operations"],
-    motto: "The Forward"
+    motto: "The Forward",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
   },
   {
     name: "Jat Regiment",
@@ -63,7 +69,8 @@ const regiments: Regiment[] = [
     description: "Renowned for their physical prowess",
     specialties: ["Armored Corps", "Infantry"],
     famousBattles: ["Battle of Walong 1962", "1971 War"],
-    motto: "For Valour"
+    motto: "For Valour",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     name: "Maratha Light Infantry",
@@ -71,7 +78,8 @@ const regiments: Regiment[] = [
     description: "Descendants of the legendary Maratha warriors",
     specialties: ["Jungle Warfare", "Counter-insurgency"],
     famousBattles: ["Battle of Poonch", "Kargil War"],
-    motto: "Dharmo Rakshati Rakshitah"
+    motto: "Dharmo Rakshati Rakshitah",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
   },
   {
     name: "Assam Regiment",
@@ -79,7 +87,8 @@ const regiments: Regiment[] = [
     description: "Proud soldiers from the North-East",
     specialties: ["Mountain Warfare", "Jungle Operations"],
     famousBattles: ["Battle of Gangasagar 1971", "Operation Vijay"],
-    motto: "Anything Anywhere"
+    motto: "Anything Anywhere",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   }
 ];
 
@@ -145,13 +154,23 @@ export default function RegimentsPage() {
                 transition={{ duration: 0.5 }}
                 className="glass rounded-3xl p-8"
               >
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-20 h-20 rounded-full bg-army-green-600/30 flex items-center justify-center">
-                    <Shield className="w-10 h-10 text-army-green-500" />
-                  </div>
-                  <div>
-                    <h2 className="text-3xl font-bold">{selectedRegiment.name}</h2>
-                    <p className="text-army-green-400">{selectedRegiment.nickname}</p>
+                <div className="w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-6 relative border border-white/10">
+                  {selectedRegiment.imageUrl ? (
+                    <img src={selectedRegiment.imageUrl} alt={selectedRegiment.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <div className="w-full h-full bg-army-green-900/50 flex items-center justify-center">
+                      <Shield className="w-20 h-20 text-army-green-500/50" />
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                  <div className="absolute bottom-6 left-6 flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-full bg-black/50 backdrop-blur-md border border-army-green-500/30 flex items-center justify-center">
+                      <Shield className="w-8 h-8 text-army-green-400" />
+                    </div>
+                    <div>
+                      <h2 className="text-3xl md:text-4xl font-bold text-white shadow-sm">{selectedRegiment.name}</h2>
+                      <p className="text-army-green-400 text-lg md:text-xl font-medium">{selectedRegiment.nickname}</p>
+                    </div>
                   </div>
                 </div>
 

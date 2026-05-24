@@ -9,6 +9,7 @@ export interface MilitaryOperation {
   outcomeSummary: string;
   significance: string;
   outcomeType: "success" | "partial" | "ongoing";
+  imageUrl?: string;
 }
 
 export const operations: MilitaryOperation[] = [
@@ -28,7 +29,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "India successfully restored territorial integrity after 2 months of intense mountain warfare",
     significance: "Demonstrated India's resolve to protect its territorial integrity and military capability in high-altitude warfare",
-    outcomeType: "success"
+    outcomeType: "success",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     id: "2",
@@ -46,7 +48,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "While no direct conflict occurred, the operation demonstrated India's military readiness and resolve",
     significance: "Showcased India's ability to mobilize massive forces quickly and maintain prolonged deployment",
-    outcomeType: "partial"
+    outcomeType: "partial",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
   },
   {
     id: "3",
@@ -64,7 +67,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Successfully destroyed terrorist infrastructure and sent clear message to Pakistan",
     significance: "Marked a shift in India's policy of responding to terrorism with immediate action",
-    outcomeType: "success"
+    outcomeType: "success",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     id: "4",
@@ -82,7 +86,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Military objective achieved but with political and social consequences",
     significance: "Had profound impact on India's political landscape and Sikh community relations",
-    outcomeType: "partial"
+    outcomeType: "partial",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     id: "5",
@@ -100,7 +105,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Successfully removed militants while minimizing damage to the holy site",
     significance: "Demonstrated evolving counter-insurgency tactics and importance of cultural sensitivity",
-    outcomeType: "success"
+    outcomeType: "success",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     id: "6",
@@ -118,7 +124,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Swift operation successfully thwarted the coup and rescued the Maldivian President",
     significance: "Demonstrated India's role as a regional security provider and rapid deployment capability",
-    outcomeType: "success"
+    outcomeType: "success",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     id: "7",
@@ -136,7 +143,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Ongoing operation with significant success in curbing terrorism in the region",
     significance: "One of the longest-running counter-insurgency operations, constantly adapting to new challenges",
-    outcomeType: "ongoing"
+    outcomeType: "ongoing",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
   },
   {
     id: "8",
@@ -154,7 +162,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Successfully provided air support that was crucial to the ground victory",
     significance: "Demonstrated effective air-land coordination in mountain warfare",
-    outcomeType: "success"
+    outcomeType: "success",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   },
   {
     id: "9",
@@ -172,7 +181,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "India secured strategic control of the glacier region despite extreme conditions",
     significance: "Set precedent for high-altitude warfare and established India's claim to the region",
-    outcomeType: "ongoing"
+    outcomeType: "ongoing",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     id: "10",
@@ -190,7 +200,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "IPKF achieved tactical success but strategic objectives not fully met",
     significance: "Highlighted complexities of peacekeeping and insurgency operations",
-    outcomeType: "partial"
+    outcomeType: "partial",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     id: "11",
@@ -208,7 +219,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Completely crippled Pakistani naval capacity in the Arabian Sea",
     significance: "Demonstrated India's naval superiority and strategic planning",
-    outcomeType: "success"
+    outcomeType: "success",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     id: "12",
@@ -226,7 +238,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Successfully completed the naval campaign against Pakistan",
     significance: "Complemented Operation Trident to establish naval dominance",
-    outcomeType: "success"
+    outcomeType: "success",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
   },
   {
     id: "13",
@@ -244,7 +257,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Successfully destroyed militant infrastructure across the border",
     significance: "Demonstrated India's willingness to conduct cross-border operations against terrorists",
-    outcomeType: "success"
+    outcomeType: "success",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     id: "14",
@@ -262,7 +276,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Successfully evacuated over 23,000 people including foreign nationals",
     significance: "Demonstrated India's commitment to its citizens and humanitarian leadership",
-    outcomeType: "success"
+    outcomeType: "success",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     id: "15",
@@ -280,7 +295,8 @@ export const operations: MilitaryOperation[] = [
     ],
     outcomeSummary: "Successfully ensuring safe passage for Indian vessels in volatile region",
     significance: "Demonstrates India's growing blue-water navy capabilities and regional influence",
-    outcomeType: "ongoing"
+    outcomeType: "ongoing",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   }
 ];
 

@@ -171,13 +171,13 @@ export default function RanksPage() {
                                 className="p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-all cursor-pointer group border border-white/10"
                               >
                                 <div className="flex items-center gap-4">
-                                  <div className={`w-14 h-14 rounded-full flex items-center justify-center text-2xl ${
+                                  <div className={`w-14 h-14 rounded-full flex items-center justify-center text-2xl shrink-0 overflow-hidden ${
                                     category === "Commissioned Officers" ? "bg-amber-500/20" :
                                     category === "Junior Commissioned Officers" ? "bg-army-green-500/20" :
                                     category === "Non-Commissioned Officers" ? "bg-blue-500/20" :
                                     "bg-purple-500/20"
                                   }`}>
-                                    {rank.insignia}
+                                    {rank.imageUrl ? <img src={rank.imageUrl} alt={rank.name} className="w-full h-full object-cover bg-white" /> : rank.insignia}
                                   </div>
                                   <div>
                                     <h3 className="font-bold group-hover:text-amber-400 transition-colors">
@@ -311,13 +311,13 @@ export default function RanksPage() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="text-center">
-                <div className={`w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 text-5xl ${
+                <div className={`w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 text-5xl overflow-hidden ${
                   selectedRank.category === "Commissioned Officers" ? "bg-amber-500/20" :
                   selectedRank.category === "Junior Commissioned Officers" ? "bg-army-green-500/20" :
                   selectedRank.category === "Non-Commissioned Officers" ? "bg-blue-500/20" :
                   "bg-purple-500/20"
                 }`}>
-                  {selectedRank.insignia}
+                  {selectedRank.imageUrl ? <img src={selectedRank.imageUrl} alt={selectedRank.name} className="w-full h-full object-cover bg-white" /> : selectedRank.insignia}
                 </div>
                 <h3 className="text-2xl font-bold mb-1">{selectedRank.name}</h3>
                 <p className="text-white/60 mb-4">{selectedRank.abbreviation}</p>

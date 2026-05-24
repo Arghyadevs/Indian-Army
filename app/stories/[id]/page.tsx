@@ -119,9 +119,15 @@ export default function StoryDetailPage() {
             </button>
 
             <div className="relative z-10 flex flex-col md:flex-row gap-6 items-center md:items-start">
-              <div className="w-32 h-32 rounded-full bg-army-green-600/30 flex items-center justify-center text-5xl font-bold text-army-green-500 shrink-0">
-                {hero.name.charAt(0)}
-              </div>
+              {hero.imageUrl ? (
+                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-army-green-500 shrink-0 shadow-[0_0_20px_rgba(34,197,94,0.3)]">
+                  <img src={hero.imageUrl} alt={hero.name} className="object-cover w-full h-full" />
+                </div>
+              ) : (
+                <div className="w-32 h-32 rounded-full bg-army-green-600/30 flex items-center justify-center text-5xl font-bold text-army-green-500 shrink-0">
+                  {hero.name.charAt(0)}
+                </div>
+              )}
               <div className="flex-1 text-center md:text-left">
                 <h1 className="text-3xl md:text-4xl font-bold mb-2">{hero.name}</h1>
                 <p className="text-xl text-white/70 mb-4">

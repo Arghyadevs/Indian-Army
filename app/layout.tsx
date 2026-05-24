@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1544758716-d8c97c8d9b73?w=1200&h=630&fit=crop",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg",
         width: 1200,
         height: 630,
         alt: "Operation: Tribute Cover",

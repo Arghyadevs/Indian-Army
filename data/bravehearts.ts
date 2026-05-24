@@ -12,7 +12,11 @@ export interface Braveheart {
   hometown: string;
   quote?: string;
   war: string;
+  imageUrl?: string;
 }
+
+const DEFAULT_MALE_OFFICER_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/640px-Emblem_of_India.svg.png";
+const ARMY_LOGO_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Indian_Army_Logo.svg/512px-Indian_Army_Logo.svg.png";
 
 export const bravehearts: Braveheart[] = [
   // Original 10 heroes
@@ -29,7 +33,8 @@ export const bravehearts: Braveheart[] = [
     age: 37,
     hometown: "Rajasthan",
     quote: "Retreat is not an option when your back is against the mountains.",
-    war: "1962 Sino-Indian War"
+    war: "1962 Sino-Indian War",
+    imageUrl: "https://bioconblog.com/wp-content/uploads/2020/08/maj-shaitan-singh1.jpg" // Updated to Biocon Blog image
   },
   {
     id: "2",
@@ -43,7 +48,8 @@ export const bravehearts: Braveheart[] = [
     age: 22,
     hometown: "Ranchi, Bihar (now Jharkhand)",
     quote: "The enemy had many guns, but we had one purpose.",
-    war: "1971 Indo-Pak War"
+    war: "1971 Indo-Pak War",
+    imageUrl: "https://www.honourpoint.in/wp-content/uploads/2016/12/LNk-Albert-Ekka-PVC.jpg"
   },
   {
     id: "3",
@@ -58,7 +64,8 @@ export const bravehearts: Braveheart[] = [
     age: 21,
     hometown: "Pune, Maharashtra",
     quote: "The tank is still running, sir. I'm going to take out those guns.",
-    war: "1971 Indo-Pak War"
+    war: "1971 Indo-Pak War",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Arun_Khetarpal.jpg/440px-Arun_Khetarpal.jpg"
   },
   {
     id: "4",
@@ -72,7 +79,8 @@ export const bravehearts: Braveheart[] = [
     age: 27,
     hometown: "Uttar Pradesh",
     quote: "For the flag, for the nation, for the people who trusted us.",
-    war: "1965 Indo-Pak War"
+    war: "1965 Indo-Pak War",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Abdul_Hamid_PVC.jpg/440px-Abdul_Hamid_PVC.jpg"
   },
   {
     id: "5",
@@ -86,7 +94,8 @@ export const bravehearts: Braveheart[] = [
     age: 34,
     hometown: "Uttarakhand",
     quote: "We shall not fail, for the tricolor waits to be hoisted.",
-    war: "1999 Kargil War"
+    war: "1999 Kargil War",
+    imageUrl: "https://static.toiimg.com/thumb/msid-69688913,width-400,resizemode-4/69688913.jpg"
   },
   {
     id: "6",
@@ -101,7 +110,8 @@ export const bravehearts: Braveheart[] = [
     age: 24,
     hometown: "Jammu, Jammu and Kashmir",
     quote: "Yeh dil maange more! (My heart wants more!)",
-    war: "1999 Kargil War"
+    war: "1999 Kargil War",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Vikram_Batra_PVC.jpg"
   },
   {
     id: "7",
@@ -115,7 +125,8 @@ export const bravehearts: Braveheart[] = [
     age: 28,
     hometown: "Uttar Pradesh",
     quote: "Where there is duty, there is no fear.",
-    war: "1947-48 First Kashmir War"
+    war: "1947-48 First Kashmir War",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Jadunath_Singh.jpg/440px-Jadunath_Singh.jpg"
   },
   {
     id: "8",
@@ -129,7 +140,8 @@ export const bravehearts: Braveheart[] = [
     age: 32,
     hometown: "Punjab",
     quote: "The Sikh does not retreat.",
-    war: "1947-48 First Kashmir War"
+    war: "1947-48 First Kashmir War",
+    imageUrl: "https://static.toiimg.com/thumb/msid-69688913,width-400,resizemode-4/69688913.jpg"
   },
   {
     id: "9",
@@ -143,7 +155,8 @@ export const bravehearts: Braveheart[] = [
     age: 32,
     hometown: "Saharanpur, Uttar Pradesh",
     quote: "The mission comes first, the people come first.",
-    war: "1999 Kargil War"
+    war: "1999 Kargil War",
+    imageUrl: "https://static.toiimg.com/thumb/msid-69688913,width-400,resizemode-4/69688913.jpg"
   },
   {
     id: "10",
@@ -158,7 +171,8 @@ export const bravehearts: Braveheart[] = [
     age: 31,
     hometown: "Uttarakhand",
     quote: "Rakshaks, follow me!",
-    war: "1999 Kargil War"
+    war: "1999 Kargil War",
+    imageUrl: "https://static.toiimg.com/thumb/msid-69688913,width-400,resizemode-4/69688913.jpg"
   },
   
   // Additional 15 heroes (total 25)
@@ -174,7 +188,8 @@ export const bravehearts: Braveheart[] = [
     age: 30,
     hometown: "Punjab",
     quote: "The gun must fire as long as I breathe.",
-    war: "1947-48 First Kashmir War"
+    war: "1947-48 First Kashmir War",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Karam_Singh.jpg/440px-Karam_Singh.jpg"
   },
   {
     id: "12",
@@ -188,7 +203,8 @@ export const bravehearts: Braveheart[] = [
     age: 22,
     hometown: "Uttarakhand",
     quote: "The nation needs to be defended, not by words but by action.",
-    war: "1947-48 First Kashmir War"
+    war: "1947-48 First Kashmir War",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Major_Somnath_Sharma_PVC.jpg/440px-Major_Somnath_Sharma_PVC.jpg"
   },
   {
     id: "13",
@@ -202,7 +218,8 @@ export const bravehearts: Braveheart[] = [
     age: 24,
     hometown: "Punjab",
     quote: "We may be few, but we are brave.",
-    war: "1947-48 First Kashmir War"
+    war: "1947-48 First Kashmir War",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "14",
@@ -216,7 +233,8 @@ export const bravehearts: Braveheart[] = [
     age: 25,
     hometown: "Uttar Pradesh",
     quote: "For the pride of my regiment.",
-    war: "1965 Indo-Pak War"
+    war: "1965 Indo-Pak War",
+    imageUrl: DEFAULT_MALE_OFFICER_IMG
   },
   {
     id: "15",
@@ -230,7 +248,8 @@ export const bravehearts: Braveheart[] = [
     age: 26,
     hometown: "West Bengal (Gorkha community)",
     quote: "The Gorkha stands firm.",
-    war: "1965 Indo-Pak War"
+    war: "1965 Indo-Pak War",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "16",
@@ -244,7 +263,8 @@ export const bravehearts: Braveheart[] = [
     age: 38,
     hometown: "Punjab",
     quote: "Attack is the best defense.",
-    war: "1971 Indo-Pak War"
+    war: "1971 Indo-Pak War",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "17",
@@ -258,7 +278,8 @@ export const bravehearts: Braveheart[] = [
     age: 28,
     hometown: "Madhya Pradesh",
     quote: "Small force, big victory.",
-    war: "1971 Indo-Pak War"
+    war: "1971 Indo-Pak War",
+    imageUrl: DEFAULT_MALE_OFFICER_IMG
   },
   {
     id: "18",
@@ -272,7 +293,8 @@ export const bravehearts: Braveheart[] = [
     age: 26,
     hometown: "Punjab",
     quote: "The sky is my battlefield.",
-    war: "1965 Indo-Pak War"
+    war: "1965 Indo-Pak War",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/en/7/7b/Kuldip_Singh_Chandpuri.jpg"
   },
   {
     id: "19",
@@ -286,7 +308,8 @@ export const bravehearts: Braveheart[] = [
     age: 35,
     hometown: "Punjab",
     quote: "Lead from the front.",
-    war: "1971 Indo-Pak War"
+    war: "1971 Indo-Pak War",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "20",
@@ -300,7 +323,8 @@ export const bravehearts: Braveheart[] = [
     age: 29,
     hometown: "British India (Scottish)",
     quote: "We shall not surrender.",
-    war: "World War II"
+    war: "World War II",
+    imageUrl: DEFAULT_MALE_OFFICER_IMG
   },
   {
     id: "21",
@@ -314,7 +338,8 @@ export const bravehearts: Braveheart[] = [
     age: 96,
     hometown: "Karnataka",
     quote: "The Indian Army is a disciplined force.",
-    war: "Multiple"
+    war: "Multiple",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Field_Marshal_K._M._Cariappa.jpg/440px-Field_Marshal_K._M._Cariappa.jpg"
   },
   {
     id: "22",
@@ -328,7 +353,8 @@ export const bravehearts: Braveheart[] = [
     age: 94,
     hometown: "Punjab",
     quote: "Gentlemen, I have only one request. Let me do it in my own way.",
-    war: "Multiple"
+    war: "Multiple",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Sam_Manekshaw.jpg/440px-Sam_Manekshaw.jpg"
   },
   {
     id: "23",
@@ -342,7 +368,8 @@ export const bravehearts: Braveheart[] = [
     age: 45,
     hometown: "Punjab",
     quote: "Victory belongs to the bold.",
-    war: "1965 Indo-Pak War"
+    war: "1965 Indo-Pak War",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "24",
@@ -356,7 +383,8 @@ export const bravehearts: Braveheart[] = [
     age: 32,
     hometown: "Uttar Pradesh",
     quote: "Hold your ground.",
-    war: "1965 Indo-Pak War"
+    war: "1965 Indo-Pak War",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "25",
@@ -370,7 +398,8 @@ export const bravehearts: Braveheart[] = [
     age: 26,
     hometown: "Uttar Pradesh",
     quote: "For the motherland.",
-    war: "Modern Operations"
+    war: "Modern Operations",
+    imageUrl: DEFAULT_MALE_OFFICER_IMG
   }
 ];
 
@@ -385,4 +414,3 @@ export const getBraveheartsByRegiment = (regiment: string): Braveheart[] => {
 export const getBraveheartsByWar = (war: string): Braveheart[] => {
   return bravehearts.filter(bh => bh.war.toLowerCase().includes(war.toLowerCase()));
 };
-

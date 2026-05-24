@@ -16,6 +16,7 @@ interface EntryPath {
   stages: string[];
   famousAlumni: string[];
   icon: string;
+  imageUrl?: string;
 }
 
 const entryPaths: EntryPath[] = [
@@ -27,7 +28,8 @@ const entryPaths: EntryPath[] = [
     description: "The world's first tri-service academy where cadets undergo rigorous military training before joining their respective service academies.",
     stages: ["Written Exam", "SSB Interview", "Medical Examination", "Merit List", "Training"],
     famousAlumni: ["Abdul Hamid", "Vikram Batra", "Arun Khetarpal"],
-    icon: "🎓"
+    icon: "🎓",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     name: "CDS",
@@ -37,7 +39,8 @@ const entryPaths: EntryPath[] = [
     description: "Entry for graduates into IMA, OTA, INA, and AFA. Candidates undergo rigorous selection and training at respective academies.",
     stages: ["Written Exam", "SSB Interview", "Medical Examination", "Merit List", "Training at Academy"],
     famousAlumni: ["Manoj Kumar Pandey", "Grenadier Abdul Hamid"],
-    icon: "⭐"
+    icon: "⭐",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     name: "TES",
@@ -47,7 +50,8 @@ const entryPaths: EntryPath[] = [
     description: "Entry for technically qualified candidates who join engineering courses at military colleges.",
     stages: ["Shortlisting", "SSB Interview", "Medical Examination", "Engineering Training", "Commission"],
     famousAlumni: ["Various Army Engineers"],
-    icon: "🔧"
+    icon: "🔧",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     name: "NCC",
@@ -57,7 +61,8 @@ const entryPaths: EntryPath[] = [
     description: "Direct entry for NCC cadets with excellent records and leadership qualities.",
     stages: ["NCC 'C' Certificate", "Shortlisting", "SSB Interview", "Medical", "Training"],
     famousAlumni: ["Many decorated officers"],
-    icon: "🏅"
+    icon: "🏅",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   },
   {
     name: "JAG",
@@ -67,7 +72,8 @@ const entryPaths: EntryPath[] = [
     description: "Entry for law graduates into the Indian Army's legal division.",
     stages: ["Application", "SSB Interview", "Medical", "Commission"],
     famousAlumni: ["Legal Officers of Indian Army"],
-    icon: "⚖️"
+    icon: "⚖️",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   },
   {
     name: "AFCAT",
@@ -77,7 +83,8 @@ const entryPaths: EntryPath[] = [
     description: "Entry into Indian Air Force for flying, ground duty, and technical branches.",
     stages: ["Online Exam", "SSB Interview", "Medical", "Training at AFA"],
     famousAlumni: ["Air Force Warriors"],
-    icon: "✈️"
+    icon: "✈️",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
   }
 ];
 
@@ -148,13 +155,23 @@ export default function TrainingPage() {
                 transition={{ duration: 0.5 }}
                 className="glass rounded-3xl p-8"
               >
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-20 h-20 rounded-full bg-army-green-600/30 flex items-center justify-center text-4xl">
-                    {selectedPath.icon}
-                  </div>
-                  <div>
-                    <h2 className="text-3xl font-bold">{selectedPath.name}</h2>
-                    <p className="text-army-green-400">{selectedPath.fullName}</p>
+                <div className="w-full h-48 md:h-64 rounded-2xl overflow-hidden mb-6 relative border border-white/10">
+                  {selectedPath.imageUrl ? (
+                    <img src={selectedPath.imageUrl} alt={selectedPath.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <div className="w-full h-full bg-army-green-900/50 flex items-center justify-center">
+                      <GraduationCap className="w-20 h-20 text-army-green-500/50" />
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 flex items-center gap-4">
+                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-black/50 backdrop-blur-md border border-army-green-500/30 flex items-center justify-center text-2xl md:text-3xl">
+                      {selectedPath.icon}
+                    </div>
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-bold text-white shadow-sm">{selectedPath.name}</h2>
+                      <p className="text-army-green-400 md:text-lg font-medium">{selectedPath.fullName}</p>
+                    </div>
                   </div>
                 </div>
 

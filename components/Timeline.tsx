@@ -49,6 +49,12 @@ export default function Timeline() {
                 {/* Content */}
                 <div className={`flex-1 ${index % 2 === 0 ? "md:text-left" : "md:text-right"} pl-16 md:pl-0`}>
                   <div className="glass rounded-3xl p-6 hover:bg-white/10 transition-all group">
+                    {war.imageUrl && (
+                      <div className="w-full h-48 mb-6 rounded-2xl overflow-hidden relative">
+                        <img src={war.imageUrl} alt={war.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                      </div>
+                    )}
                     <div className="flex items-center gap-3 mb-3">
                       <span className="px-3 py-1 bg-army-green-600/30 rounded-full text-army-green-400 text-sm font-medium">
                         {war.year}

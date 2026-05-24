@@ -31,19 +31,24 @@ export default function Home() {
       ) : (
         <>
           {/* Hero Section After Intro */}
-          <section className="min-h-screen flex items-center justify-center px-6 pt-20">
-            <div className="max-w-4xl text-center">
+          <section className="min-h-screen flex items-center justify-center px-6 pt-20 relative overflow-hidden">
+            <div className="absolute inset-0 z-0">
+              <img src="/hero-bg.png" alt="Indian Army Background" className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
+              <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-black/80 to-black"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-saffron/15 via-transparent to-india-green/15"></div>
+            </div>
+            <div className="max-w-4xl text-center relative z-10">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                  <span className="text-white">Remember Their</span>
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-wide">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-saffron via-white to-india-green">Remember Their</span>
                   <br />
-                  <span className="text-army-green-500">Courage</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-saffron via-white to-india-green drop-shadow-sm">Courage</span>
                 </h1>
-                <p className="text-white/60 text-lg max-w-2xl mx-auto mb-10">
+                <p className="text-white/90 text-xl max-w-2xl mx-auto mb-10 font-medium drop-shadow-md">
                   The Indian Army has protected our nation through seven decades of conflict, 
                   sacrifice, and unwavering dedication. This memorial stands as a testament 
                   to their bravery.
@@ -57,21 +62,21 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
               >
-                <div className="glass rounded-2xl p-6">
-                  <p className="text-3xl md:text-4xl font-bold text-army-green-500">76+</p>
-                  <p className="text-white/60 text-sm mt-1">Years of Service</p>
+                <div className="glass rounded-2xl p-6 border border-saffron/20 hover:border-saffron/50 transition-colors">
+                  <p className="text-3xl md:text-4xl font-bold text-saffron">76+</p>
+                  <p className="text-white/80 text-sm mt-1">Years of Service</p>
                 </div>
-                <div className="glass rounded-2xl p-6">
-                  <p className="text-3xl md:text-4xl font-bold text-army-green-500">5</p>
-                  <p className="text-white/60 text-sm mt-1">Major Wars</p>
+                <div className="glass rounded-2xl p-6 border border-white/20 hover:border-white/50 transition-colors">
+                  <p className="text-3xl md:text-4xl font-bold text-white">5</p>
+                  <p className="text-white/80 text-sm mt-1">Major Wars</p>
                 </div>
-                <div className="glass rounded-2xl p-6">
-                  <p className="text-3xl md:text-4xl font-bold text-army-green-500">25+</p>
-                  <p className="text-white/60 text-sm mt-1">Param Vir Chakras</p>
+                <div className="glass rounded-2xl p-6 border border-india-green/20 hover:border-india-green/50 transition-colors">
+                  <p className="text-3xl md:text-4xl font-bold text-india-green">25+</p>
+                  <p className="text-white/80 text-sm mt-1">Param Vir Chakras</p>
                 </div>
-                <div className="glass rounded-2xl p-6">
-                  <p className="text-3xl md:text-4xl font-bold text-army-green-500">1.2M+</p>
-                  <p className="text-white/60 text-sm mt-1">Active Personnel</p>
+                <div className="glass rounded-2xl p-6 border border-saffron/20 hover:border-saffron/50 transition-colors">
+                  <p className="text-3xl md:text-4xl font-bold text-saffron">1.2M+</p>
+                  <p className="text-white/80 text-sm mt-1">Active Personnel</p>
                 </div>
               </motion.div>
             </div>
@@ -85,30 +90,33 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="glass rounded-3xl p-8 md:p-12 relative overflow-hidden border border-amber-500/30"
+                className="glass rounded-3xl p-8 md:p-12 relative overflow-hidden border border-navy/50 shadow-[0_0_20px_rgba(0,0,128,0.2)]"
               >
-                <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+                <div className="absolute top-0 right-0 w-96 h-96 bg-saffron/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-india-green/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
                 
                 <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
                   <div className="flex-1 text-center md:text-left">
-                    <div className="flex items-center justify-center md:justify-start gap-2 mb-4 text-amber-500">
+                    <div className="flex items-center justify-center md:justify-start gap-2 mb-4 text-saffron">
                       <Calendar size={20} />
                       <span className="text-sm font-bold tracking-widest uppercase">Hero of the Day</span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold mb-4">{heroOfTheDay.name}</h2>
                     <p className="text-xl text-white/70 mb-6">{heroOfTheDay.rank}, {heroOfTheDay.regiment}</p>
-                    <p className="text-white/60 leading-relaxed mb-8 line-clamp-3">
+                    <p className="text-white/80 leading-relaxed mb-8 line-clamp-3">
                       {heroOfTheDay.story}
                     </p>
                     <Link 
                       href={`/stories/${heroOfTheDay.id}`}
-                      className="inline-flex items-center gap-2 text-amber-500 font-semibold hover:gap-3 transition-all"
+                      className="inline-flex items-center gap-2 text-saffron font-semibold hover:gap-3 transition-all"
                     >
                       Read Full Story <ArrowRight size={20} />
                     </Link>
                   </div>
-                  <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-amber-500/20 to-transparent border border-amber-500/30 flex items-center justify-center shrink-0">
-                    <span className="text-6xl md:text-8xl font-bold text-amber-500/50">{heroOfTheDay.name.charAt(0)}</span>
+                  <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-saffron via-white to-india-green p-1 shrink-0 shadow-[0_0_30px_rgba(255,153,51,0.3)]">
+                    <div className="w-full h-full rounded-full bg-navy/80 backdrop-blur-sm flex items-center justify-center border-4 border-black">
+                      <span className="text-6xl md:text-8xl font-bold text-white">{heroOfTheDay.name.charAt(0)}</span>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -139,13 +147,13 @@ export default function Home() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="glass rounded-3xl p-6 hover:bg-white/10 transition-all group cursor-pointer"
+                    className="glass rounded-3xl p-6 hover:bg-white/10 transition-all group cursor-pointer border-t-2 border-t-transparent hover:border-t-india-green"
                   >
-                    <p className="text-army-green-500 text-sm tracking-widest mb-2">{war.year}</p>
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-army-green-400 transition-colors">
+                    <p className="text-saffron font-bold text-sm tracking-widest mb-2">{war.year}</p>
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-india-green transition-colors">
                       {war.title}
                     </h3>
-                    <p className="text-white/60 text-sm">{war.shortDesc}</p>
+                    <p className="text-white/70 text-sm">{war.shortDesc}</p>
                   </motion.div>
                 ))}
               </div>
@@ -153,7 +161,7 @@ export default function Home() {
           </section>
 
           {/* Stories Preview */}
-          <section className="py-20 px-6 bg-gradient-to-b from-black to-army-green-950/20">
+          <section className="py-20 px-6 bg-gradient-to-b from-black via-black to-india-green/5">
             <div className="max-w-6xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -184,19 +192,19 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="glass rounded-3xl p-12 relative overflow-hidden"
+                className="glass rounded-3xl p-12 relative overflow-hidden border border-navy/50 shadow-[0_0_20px_rgba(0,0,128,0.2)]"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-army-green-900/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-saffron/20 via-white/10 to-india-green/20" />
                 <div className="relative z-10">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">Pay Your Tributes</h2>
-                  <p className="text-white/60 mb-8 max-w-xl mx-auto">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-saffron to-white">Pay Your Tributes</h2>
+                  <p className="text-white/80 mb-8 max-w-xl mx-auto">
                     Join thousands of others in honoring the brave souls who gave everything 
                     for our freedom. Light a candle. Leave a message. Salute their sacrifice.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
                       href="/memorial"
-                      className="px-8 py-4 bg-army-green-600 text-white font-semibold rounded-full hover:bg-army-green-500 transition-colors"
+                      className="px-8 py-4 bg-india-green text-white font-bold rounded-full hover:bg-green-600 transition-colors shadow-[0_0_15px_rgba(19,136,8,0.4)]"
                     >
                       Memorial Wall
                     </a>

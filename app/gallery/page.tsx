@@ -253,6 +253,25 @@ const galleryItems: GalleryItem[] = [
     category: "medals", 
     stats: "Multiple recipients | Bronze medal" 
   },
+  // Personnel
+  { 
+    id: 25, 
+    title: "Gorkha Rifles", 
+    subtitle: "Infantry Regiment", 
+    description: "Renowned for their bravery and use of the Khukri. Known globally for their fearless combat skills.", 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg", 
+    category: "personnel", 
+    stats: "Established 1815 | Multiple PVC winners" 
+  },
+  { 
+    id: 26, 
+    title: "Para Special Forces", 
+    subtitle: "Elite Commando Unit", 
+    description: "Highly trained elite special forces unit of the Indian Army, specialized in direct action and hostage rescue.", 
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Para_SF_Operative.jpg", 
+    category: "personnel", 
+    stats: "Maroon Beret | Balidan Badge" 
+  },
 ];
 
 const categories = [
@@ -261,6 +280,7 @@ const categories = [
   { id: "aircraft", label: "Aircraft", icon: Plane },
   { id: "weapons", label: "Weapons", icon: Target },
   { id: "medals", label: "Medals", icon: Trophy },
+  { id: "personnel", label: "Personnel", icon: Shield },
 ];
 
 export default function GalleryPage() {
@@ -277,6 +297,7 @@ export default function GalleryPage() {
       case "aircraft": return "from-blue-900/30 to-cyan-900/30 border-blue-500/30";
       case "weapons": return "from-red-900/30 to-rose-900/30 border-red-500/30";
       case "medals": return "from-yellow-900/30 to-amber-900/30 border-yellow-500/30";
+      case "personnel": return "from-saffron/20 to-orange-500/10 border-saffron/30";
       default: return "from-army-green-900/30 to-emerald-900/30 border-army-green-500/30";
     }
   };
@@ -287,6 +308,7 @@ export default function GalleryPage() {
       case "aircraft": return "bg-blue-500/20 text-blue-400";
       case "weapons": return "bg-red-500/20 text-red-400";
       case "medals": return "bg-yellow-500/20 text-yellow-400";
+      case "personnel": return "bg-saffron/20 text-saffron";
       default: return "bg-army-green-500/20 text-army-green-400";
     }
   };
@@ -429,25 +451,37 @@ export default function GalleryPage() {
           >
             <h2 className="text-2xl font-bold mb-6 text-center">Famous Operations Gallery</h2>
             <div className="grid md:grid-cols-4 gap-4">
-              <div className="glass rounded-2xl p-6 text-center border-l-4 border-amber-500">
-                <p className="text-4xl mb-3">🏔️</p>
-                <h3 className="font-bold">Operation Vijay</h3>
-                <p className="text-xs text-white/60 mt-1">Kargil War 1999</p>
+              <div className="glass rounded-2xl overflow-hidden relative group h-40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg" alt="Operation Vijay" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 border-l-4 border-amber-500 pl-3">
+                  <h3 className="font-bold text-white">Operation Vijay</h3>
+                  <p className="text-xs text-amber-400 mt-1">Kargil War 1999</p>
+                </div>
               </div>
-              <div className="glass rounded-2xl p-6 text-center border-l-4 border-blue-500">
-                <p className="text-4xl mb-3">✈️</p>
-                <h3 className="font-bold">Surgical Strikes</h3>
-                <p className="text-xs text-white/60 mt-1">2016</p>
+              <div className="glass rounded-2xl overflow-hidden relative group h-40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg" alt="Surgical Strikes" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 border-l-4 border-blue-500 pl-3">
+                  <h3 className="font-bold text-white">Surgical Strikes</h3>
+                  <p className="text-xs text-blue-400 mt-1">2016</p>
+                </div>
               </div>
-              <div className="glass rounded-2xl p-6 text-center border-l-4 border-green-500">
-                <p className="text-4xl mb-3">💥</p>
-                <h3 className="font-bold">Balakot Airstrike</h3>
-                <p className="text-xs text-white/60 mt-1">2019</p>
+              <div className="glass rounded-2xl overflow-hidden relative group h-40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Dassault_Mirage_2000H.jpg/640px-Dassault_Mirage_2000H.jpg" alt="Balakot Airstrike" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 border-l-4 border-green-500 pl-3">
+                  <h3 className="font-bold text-white">Balakot Airstrike</h3>
+                  <p className="text-xs text-green-400 mt-1">2019</p>
+                </div>
               </div>
-              <div className="glass rounded-2xl p-6 text-center border-l-4 border-red-500">
-                <p className="text-4xl mb-3">🎖️</p>
-                <h3 className="font-bold">Operation Parakram</h3>
-                <p className="text-xs text-white/60 mt-1">2001-02</p>
+              <div className="glass rounded-2xl overflow-hidden relative group h-40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/T-72M1.jpg/640px-T-72M1.jpg" alt="Operation Parakram" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 border-l-4 border-red-500 pl-3">
+                  <h3 className="font-bold text-white">Operation Parakram</h3>
+                  <p className="text-xs text-red-400 mt-1">2001-02</p>
+                </div>
               </div>
             </div>
           </motion.div>

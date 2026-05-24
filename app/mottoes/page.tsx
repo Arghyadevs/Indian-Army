@@ -13,6 +13,7 @@ interface Motto {
   origin: string;
   usage: string;
   category: string;
+  imageUrl?: string;
 }
 
 const mottos: Motto[] = [
@@ -21,84 +22,96 @@ const mottos: Motto[] = [
     meaning: "The welfare, honor, and happiness of the nation comes before one's own personal interests.",
     origin: "Indian Army Motto",
     usage: "Used in all official communications and training",
-    category: "General"
+    category: "General",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     text: "Jai Hind",
     meaning: "Victory to India - A slogan of patriotism and unity.",
     origin: "Popular Slogan (1940s)",
     usage: "Greetings, celebrations, patriotic events",
-    category: "Greeting"
+    category: "Greeting",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     text: "Bharat Mata Ki Jai",
     meaning: "Victory to Mother India - A rallying cry for the nation.",
     origin: "Freedom Struggle Era",
     usage: "Battle cry, patriotic occasions",
-    category: "Battle Cry"
+    category: "Battle Cry",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
   },
   {
     text: "Vijayee Vishv",
     meaning: "Victory is mine - A confident declaration of triumph.",
     origin: "Ancient Indian Tradition",
     usage: "Before battles and operations",
-    category: "Battle Cry"
+    category: "Battle Cry",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   },
   {
     text: "Namaste Swayam",
     meaning: "I bow to you - A respectful greeting between soldiers.",
     origin: "Traditional Indian Culture",
     usage: "Formal greetings between officers",
-    category: "Greeting"
+    category: "Greeting",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     text: "Shatru Vijay",
     meaning: "Defeat the enemy - A command to achieve victory.",
     origin: "Sanskrit Military Tradition",
     usage: "Battle commands",
-    category: "Command"
+    category: "Command",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     text: "Dharmo Rakshati Rakshitah",
     meaning: "Those who protect righteousness are protected.",
     origin: "Maratha Light Infantry",
     usage: "Regimental motto",
-    category: "Regimental"
+    category: "Regimental",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
   },
   {
     text: "For Valour",
     meaning: "Courage in the face of adversity - the highest virtue.",
     origin: "Jat Regiment",
     usage: "Regimental motto",
-    category: "Regimental"
+    category: "Regimental",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     text: "Nischay Kar Apni Ijmma Karo",
     meaning: "Make a resolve and fulfill it with determination.",
     origin: "Sikh Regiment",
     usage: "Regimental motto",
-    category: "Regimental"
+    category: "Regimental",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   },
   {
     text: "Better to Die than to be a Coward",
     meaning: "Courage above all - death is preferable to dishonor.",
     origin: "Gorkha Rifles",
     usage: "Regimental motto",
-    category: "Regimental"
+    category: "Regimental",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     text: "The Forward",
     meaning: "Always move forward - never retreat.",
     origin: "Rajput Regiment",
     usage: "Regimental motto",
-    category: "Regimental"
+    category: "Regimental",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     text: "Anything Anywhere",
     meaning: "Ready for any mission, anywhere in the world.",
     origin: "Assam Regiment",
     usage: "Regimental motto",
-    category: "Regimental"
+    category: "Regimental",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   }
 ];
 
@@ -303,10 +316,18 @@ export default function MottoesPage() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-amber-500/20 flex items-center justify-center mx-auto mb-6">
-                  <Zap className="w-8 h-8 text-amber-500" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">"{selectedMotto.text}"</h3>
+                {selectedMotto.imageUrl && (
+                  <div className="w-full h-40 rounded-xl overflow-hidden mb-6 relative">
+                    <img src={selectedMotto.imageUrl} alt={selectedMotto.text} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+                      <div className="w-12 h-12 rounded-full bg-amber-500/80 backdrop-blur-md flex items-center justify-center shadow-lg border border-white/20">
+                        <Zap className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                  </div>
+                )}
+                <h3 className="text-3xl font-bold mb-4 text-amber-400">"{selectedMotto.text}"</h3>
                 <p className="text-white/70 mb-4">{selectedMotto.meaning}</p>
                 <div className="space-y-2 text-sm">
                   <p><span className="text-army-green-500">Origin:</span> {selectedMotto.origin}</p>

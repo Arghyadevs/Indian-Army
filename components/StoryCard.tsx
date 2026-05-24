@@ -24,13 +24,20 @@ export default function StoryCard({ hero, index }: StoryCardProps) {
 
       {/* Header */}
       <div className="flex items-start justify-between mb-4 relative z-10">
-        <div>
-          <p className="text-army-green-500 text-xs tracking-widest uppercase mb-1">
-            {hero.rank} • {hero.regiment}
-          </p>
-          <h3 className="text-lg font-semibold group-hover:text-army-green-400 transition-colors">
-            {hero.name}
-          </h3>
+        <div className="flex items-center gap-4">
+          {hero.imageUrl && (
+            <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-saffron flex-shrink-0 shadow-lg">
+              <img src={hero.imageUrl} alt={hero.name} className="object-cover w-full h-full" />
+            </div>
+          )}
+          <div>
+            <p className="text-saffron text-xs tracking-widest uppercase mb-1">
+              {hero.rank} • {hero.regiment}
+            </p>
+            <h3 className="text-lg font-semibold group-hover:text-india-green transition-colors">
+              {hero.name}
+            </h3>
+          </div>
         </div>
         <div className="flex items-center gap-1 text-yellow-500">
           <Star size={14} fill="currentColor" />

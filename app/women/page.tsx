@@ -124,9 +124,15 @@ export default function WomenInArmyPage() {
                 className="glass rounded-3xl p-6 hover:bg-white/10 transition-all cursor-pointer group"
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center text-2xl font-bold text-amber-500">
-                    {officer.name.charAt(0)}
-                  </div>
+                  {officer.imageUrl ? (
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-amber-500 shadow-lg">
+                      <img src={officer.imageUrl} alt={officer.name} className="object-cover w-full h-full" />
+                    </div>
+                  ) : (
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center text-2xl font-bold text-amber-500">
+                      {officer.name.charAt(0)}
+                    </div>
+                  )}
                   <div>
                     <h3 className="text-lg font-bold group-hover:text-amber-400 transition-colors">
                       {officer.name}
@@ -254,9 +260,15 @@ export default function WomenInArmyPage() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="text-center">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center mx-auto mb-4 text-3xl font-bold text-amber-500">
-                  {selectedOfficer.name.charAt(0)}
-                </div>
+                {selectedOfficer.imageUrl ? (
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 border-4 border-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.5)]">
+                    <img src={selectedOfficer.imageUrl} alt={selectedOfficer.name} className="object-cover w-full h-full" />
+                  </div>
+                ) : (
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center mx-auto mb-4 text-3xl font-bold text-amber-500">
+                    {selectedOfficer.name.charAt(0)}
+                  </div>
+                )}
                 <h3 className="text-2xl font-bold mb-1">{selectedOfficer.name}</h3>
                 <p className="text-amber-500 mb-4">{selectedOfficer.rank}</p>
                 

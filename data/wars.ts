@@ -6,6 +6,7 @@ export interface War {
   keyBattles: string[];
   outcome: string;
   casualties?: string;
+  imageUrl?: string;
 }
 
 export const wars: War[] = [
@@ -16,7 +17,8 @@ export const wars: War[] = [
     fullDesc: "Following India's independence and the partition, tribal infiltrators backed by Pakistan invaded the princely state of Jammu and Kashmir. The Maharaja signed the Instrument of Accession to India, and the Indian Army was called in to defend the territory. This conflict established India's commitment to defending its sovereignty.",
     keyBattles: ["Battle of Srinagar", "Operation of the Pirates", "Siege of Poonch"],
     outcome: "India secured approximately two-thirds of Kashmir, establishing the Line of Control.",
-    casualties: "India: ~1,500 killed, Pakistan: ~6,000-8,000 killed"
+    casualties: "India: ~1,500 killed, Pakistan: ~6,000-8,000 killed",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     year: "1962",
@@ -25,7 +27,8 @@ export const wars: War[] = [
     fullDesc: "China launched a swift offensive across the Himalayas in October 1962, catching Indian forces off guard. Despite fierce resistance at points like Walong and Tawang, Indian troops were overwhelmed due to poor logistics and inadequate preparation. The war exposed critical gaps in India's defense capabilities and led to major military reforms.",
     keyBattles: ["Battle of Walong", "Battle of Tawang", "Namka Chu Valley"],
     outcome: "China declared a ceasefire and withdrew to pre-conflict lines, but retained Aksai Chin.",
-    casualties: "India: ~1,383 killed, 3,000+ wounded, China: ~240 killed, 700+ wounded"
+    casualties: "India: ~1,383 killed, 3,000+ wounded, China: ~240 killed, 700+ wounded",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     year: "1965",
@@ -34,7 +37,8 @@ export const wars: War[] = [
     fullDesc: "Pakistan launched Operation Gibraltar, infiltrating militants into Jammu & Kashmir. India responded by launching its own offensive across the international border. The war saw intense tank battles in the Khem Karan sector and heroic defense at the Battle of Asal Uttar, where Indian forces destroyed 97 Pakistani tanks.",
     keyBattles: ["Battle of Asal Uttar", "Battle of Khem Karan", "Battle of Haji Pir Pass"],
     outcome: "Inconclusive military outcome, but diplomatic pressure led to a UN ceasefire. India gained strategically.",
-    casualties: "India: ~3,000 killed, Pakistan: ~3,800 killed"
+    casualties: "India: ~3,000 killed, Pakistan: ~3,800 killed",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     year: "1971",
@@ -43,7 +47,8 @@ export const wars: War[] = [
     fullDesc: "India intervened in the Bangladesh Liberation War after millions of refugees fled Pakistan's brutal crackdown. In a swift campaign lasting just 13 days, Indian forces combined with Mukti Bahini guerrillas defeated Pakistan, leading to the surrender of 93,000 Pakistani soldiers and the creation of Bangladesh.",
     keyBattles: ["Battle of Longewala", "Battle of Ganganagar", "Battle of Sylhet", "Air operations over Dhaka"],
     outcome: "Decisive Indian victory, creation of Bangladesh, largest surrender of armed forces since WWII.",
-    casualties: "India: ~2,500 killed, Pakistan: ~9,000 killed, ~93,000 captured"
+    casualties: "India: ~2,500 killed, Pakistan: ~9,000 killed, ~93,000 captured",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     year: "1999",
@@ -52,7 +57,8 @@ export const wars: War[] = [
     fullDesc: "Pakistani forces disguised as militants occupied strategic peaks in the Kargil district, threatening the Srinagar-Leh highway. Indian forces launched a fierce counter-offensive to evict the intruders. The war showcased extreme mountain warfare and the bravery of soldiers who fought at altitudes above 18,000 feet.",
     keyBattles: ["Battle of Tololing", "Battle of Kargil", "Operation Vijay", "Tiger Hill"],
     outcome: "India successfully evicted all infiltrators, restoring territorial integrity.",
-    casualties: "India: ~527 killed, Pakistan: ~400-700 killed"
+    casualties: "India: ~527 killed, Pakistan: ~400-700 killed",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   },
   {
     year: "2001–02",
@@ -61,7 +67,8 @@ export const wars: War[] = [
     fullDesc: "Following the Parliament attack in December 2001, India mobilised over 500,000 troops to the border with Pakistan. The operation was the largest military mobilization in the world since WWII. While it ended without direct conflict, it demonstrated India's resolve and preparedness.",
     keyBattles: ["Border deployment", "Operation Vijayashree"],
     outcome: "Diplomatic pressure and international intervention de-escalated tensions.",
-    casualties: "India: ~36 killed (terrorist attacks during deployment)"
+    casualties: "India: ~36 killed (terrorist attacks during deployment)",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     year: "2016",
@@ -70,7 +77,8 @@ export const wars: War[] = [
     fullDesc: "After the Uri attack that killed 19 soldiers, India conducted surgical strikes on terrorist launch pads across the Line of Control. The operation demonstrated India's policy of responding to terrorism and was acknowledged by the government.",
     keyBattles: ["Surgical strikes in Poonch and Kupwara sectors"],
     outcome: "Destruction of terrorist infrastructure, clear message to Pakistan.",
-    casualties: "Indian forces: 0 killed (surgical strike), 2 killed in subsequent shelling"
+    casualties: "Indian forces: 0 killed (surgical strike), 2 killed in subsequent shelling",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   },
   {
     year: "2019",
@@ -79,7 +87,8 @@ export const wars: War[] = [
     fullDesc: "Indian Air Force jets struck a terrorist training camp in Balakot, Pakistan, in response to the Pulwama attack that killed 40 CRPF personnel. This was the first time since 1971 that Indian aircraft struck Pakistan's territory.",
     keyBattles: ["Balakot airstrike"],
     outcome: "Destruction of terrorist training camp, escalation of tensions, eventual de-escalation.",
-    casualties: "No Indian casualties, exact enemy casualties disputed"
+    casualties: "No Indian casualties, exact enemy casualties disputed",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   }
 ];
 

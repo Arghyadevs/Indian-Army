@@ -13,6 +13,7 @@ interface Equipment {
   description: string;
   capabilities: string[];
   image: string;
+  imageUrl?: string;
   role: string;
 }
 
@@ -23,7 +24,8 @@ const equipment: Equipment[] = [
     description: "India's indigenously developed main battle tank, designed to operate in all terrains.",
     capabilities: ["120mm rifled gun", "Composite armor", "Thermal imaging sights", "Auxiliary power unit"],
     image: "🛡️",
-    role: "Armoured Warfare"
+    role: "Armoured Warfare",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   },
   {
     name: "T-90 Bhishma",
@@ -31,7 +33,8 @@ const equipment: Equipment[] = [
     description: "The backbone of India's armoured corps, acquired from Russia and manufactured in India.",
     capabilities: ["125mm smoothbore gun", "Kontakt-5 ERA", "Shtora countermeasures", "Night vision"],
     image: "🎖️",
-    role: "Armoured Warfare"
+    role: "Armoured Warfare",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     name: "BrahMos Missile",
@@ -39,7 +42,8 @@ const equipment: Equipment[] = [
     description: "The world's fastest supersonic cruise missile, developed jointly by India and Russia.",
     capabilities: ["Mach 2.8 speed", "300km range", "Precision guidance", "Land-sea launch"],
     image: "🚀",
-    role: "Strategic Strike"
+    role: "Strategic Strike",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
   },
   {
     name: "Rafale Fighter",
@@ -47,7 +51,8 @@ const equipment: Equipment[] = [
     description: "French-made 4.5 generation fighter jet with superior air superiority capabilities.",
     capabilities: ["Meteor missiles", "SCALP cruise missile", "Helmet-mounted display", "Electronic warfare"],
     image: "✈️",
-    role: "Air Superiority"
+    role: "Air Superiority",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     name: "MiG-29UPG",
@@ -55,7 +60,8 @@ const equipment: Equipment[] = [
     description: "Upgraded MiG-29 fleet with modern avionics and weapons systems.",
     capabilities: ["R-73 missiles", "R-27 missiles", "In-flight refueling", "Phazotron radar"],
     image: "🛩️",
-    role: "Air Superiority"
+    role: "Air Superiority",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     name: "C-130J Super Hercules",
@@ -63,7 +69,8 @@ const equipment: Equipment[] = [
     description: "Tactical airlifter for special operations and humanitarian missions.",
     capabilities: ["20,000 kg payload", "All-weather operation", "Short landing", "Special ops capable"],
     image: "🏆",
-    role: "Strategic Transport"
+    role: "Strategic Transport",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
   },
   {
     name: "Akash Missile",
@@ -71,7 +78,8 @@ const equipment: Equipment[] = [
     description: "Indigenously developed medium-range surface-to-air missile system.",
     capabilities: ["30km range", "Multi-target engagement", "All-weather", "Quick reaction"],
     image: "🎯",
-    role: "Air Defense"
+    role: "Air Defense",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
   },
   {
     name: "PINAKA MBRL",
@@ -79,7 +87,8 @@ const equipment: Equipment[] = [
     description: "Indigenously developed multiple rocket launcher system.",
     capabilities: ["40km range", "Rapid fire", "HE fragmentation", "Area denial"],
     image: "💥",
-    role: "Artillery Support"
+    role: "Artillery Support",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     name: "INSAS Rifle",
@@ -87,7 +96,8 @@ const equipment: Equipment[] = [
     description: "Indian Small Arms System - the standard issue rifle of the Indian Army.",
     capabilities: ["5.56x45mm", "600 rpm", "400m effective range", "Ergonomic design"],
     image: "🔫",
-    role: "Infantry Weapon"
+    role: "Infantry Weapon",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
   },
   {
     name: "SIG Sauer MCX",
@@ -95,7 +105,8 @@ const equipment: Equipment[] = [
     description: "Modern modular rifle replacing older systems in special forces.",
     capabilities: ["7.62x51mm", "Modular design", "Short recoil", "Night vision compatible"],
     image: "⚡",
-    role: "Special Forces"
+    role: "Special Forces",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
   }
 ];
 
@@ -163,11 +174,17 @@ export default function EquipmentPage() {
                 transition={{ delay: index * 0.05 }}
                 className="glass rounded-3xl p-6 hover:bg-white/10 transition-all group"
               >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="text-5xl">{item.image}</div>
-                  <span className="px-3 py-1 bg-army-green-600/20 border border-army-green-500/30 rounded-full text-xs text-army-green-400">
-                    {item.type}
-                  </span>
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden relative">
+                  {item.imageUrl ? (
+                    <img src={item.imageUrl} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-5xl bg-white/5">{item.image}</div>
+                  )}
+                  <div className="absolute top-3 right-3">
+                    <span className="px-3 py-1 bg-black/60 backdrop-blur-md border border-army-green-500/30 rounded-full text-xs font-semibold text-army-green-400">
+                      {item.type}
+                    </span>
+                  </div>
                 </div>
 
                 <h3 className="text-xl font-bold mb-1 group-hover:text-army-green-400 transition-colors">

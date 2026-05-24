@@ -170,18 +170,26 @@ export default function OperationsPage() {
                 onClick={() => setSelectedOperation(operation)}
                 className="glass rounded-3xl p-6 hover:bg-white/10 transition-all cursor-pointer group"
               >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getOutcomeColor(operation.outcomeType)}`}>
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden relative">
+                  {operation.imageUrl ? (
+                    <img src={operation.imageUrl} alt={operation.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  ) : (
+                    <div className={`w-full h-full flex items-center justify-center ${getOutcomeColor(operation.outcomeType)}`}>
                       {getOutcomeIcon(operation.outcomeType)}
                     </div>
-                    <div>
-                      <h3 className="text-lg font-bold group-hover:text-army-green-400 transition-colors">
-                        {operation.name}
-                      </h3>
-                      <p className="text-sm text-white/60">{operation.year}</p>
+                  )}
+                  <div className="absolute top-3 right-3">
+                    <div className={`w-10 h-10 rounded-full flex items-center justify-center bg-black/50 backdrop-blur-md border ${getOutcomeColor(operation.outcomeType)}`}>
+                      {getOutcomeIcon(operation.outcomeType)}
                     </div>
                   </div>
+                </div>
+
+                <div className="flex flex-col mb-2">
+                  <h3 className="text-xl font-bold group-hover:text-army-green-400 transition-colors">
+                    {operation.name}
+                  </h3>
+                  <p className="text-sm text-white/60">{operation.year}</p>
                 </div>
 
                 <div className="mb-3 flex gap-2">
@@ -305,15 +313,33 @@ export default function OperationsPage() {
               className="glass rounded-3xl p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="flex items-center gap-3 mb-4">
-                <div className={`w-14 h-14 rounded-full flex items-center justify-center ${getOutcomeColor(selectedOperation.outcomeType)}`}>
-                  {getOutcomeIcon(selectedOperation.outcomeType)}
+              {selectedOperation.imageUrl && (
+                <div className="w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-6 relative">
+                  <img src={selectedOperation.imageUrl} alt={selectedOperation.name} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-6 left-6 flex items-center gap-4">
+                    <div className={`w-14 h-14 rounded-full flex items-center justify-center bg-black/50 backdrop-blur-md border ${getOutcomeColor(selectedOperation.outcomeType)}`}>
+                      {getOutcomeIcon(selectedOperation.outcomeType)}
+                    </div>
+                    <div>
+                      <h3 className="text-3xl font-bold text-white shadow-sm">{selectedOperation.name}</h3>
+                      <p className="text-white/80 font-medium text-lg">{selectedOperation.year} • {selectedOperation.type}</p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold">{selectedOperation.name}</h3>
-                  <p className="text-white/60">{selectedOperation.year} • {selectedOperation.type}</p>
+              )}
+
+              {!selectedOperation.imageUrl && (
+                <div className="flex items-center gap-3 mb-6">
+                  <div className={`w-14 h-14 rounded-full flex items-center justify-center ${getOutcomeColor(selectedOperation.outcomeType)}`}>
+                    {getOutcomeIcon(selectedOperation.outcomeType)}
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold">{selectedOperation.name}</h3>
+                    <p className="text-white/60 text-lg">{selectedOperation.year} • {selectedOperation.type}</p>
+                  </div>
                 </div>
-              </div>
+              )}
 
               <div className="space-y-4">
                 <div>

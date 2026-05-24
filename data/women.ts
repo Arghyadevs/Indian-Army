@@ -8,7 +8,11 @@ export interface WomanOfficer {
   year: string;
   role: string;
   pioneering: string;
+  imageUrl?: string;
 }
+
+const DEFAULT_FEMALE_OFFICER_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/640px-Emblem_of_India.svg.png";
+const ARMY_LOGO_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Indian_Army_Logo.svg/512px-Indian_Army_Logo.svg.png";
 
 export const womenInArmy: WomanOfficer[] = [
   {
@@ -20,7 +24,8 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Sword of Honour ( AFA)"],
     year: "2020",
     role: "Infantry Officer",
-    pioneering: "First female infantry officer in Indian Army history"
+    pioneering: "First female infantry officer in Indian Army history",
+    imageUrl: DEFAULT_FEMALE_OFFICER_IMG
   },
   {
     id: "2",
@@ -31,7 +36,8 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Vishisht Seva Medal"],
     year: "2019",
     role: "Unit Commander",
-    pioneering: "First female unit commander of mixed-gender unit"
+    pioneering: "First female unit commander of mixed-gender unit",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "3",
@@ -42,7 +48,8 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Vishisht Seva Medal", "Commendation Card"],
     year: "2021",
     role: "Medical Officer",
-    pioneering: "First female contingent commander in Republic Day Parade"
+    pioneering: "First female contingent commander in Republic Day Parade",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "4",
@@ -53,7 +60,8 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Special Forces Parachute Badge"],
     year: "2022",
     role: "Aviation Officer",
-    pioneering: "First female parajumper in Indian Armed Forces"
+    pioneering: "First female parajumper in Indian Armed Forces",
+    imageUrl: DEFAULT_FEMALE_OFFICER_IMG
   },
   {
     id: "5",
@@ -64,7 +72,8 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Ati Vishisht Seva Medal", "Vishisht Seva Medal", "Meritorious Service Medal"],
     year: "2016",
     role: "Medical Corps Chief",
-    pioneering: "First female Lieutenant General in Indian Army"
+    pioneering: "First female Lieutenant General in Indian Army",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "6",
@@ -75,7 +84,8 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Vishisht Seva Medal", "Special Service Medal"],
     year: "2018",
     role: "Signals Officer",
-    pioneering: "First female signals unit commander"
+    pioneering: "First female signals unit commander",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "7",
@@ -86,7 +96,8 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Sena Medal (Gallantry)", "Operation Vijay Medal"],
     year: "2020",
     role: "Intelligence Officer",
-    pioneering: "First female recipient of Sena Medal for gallantry"
+    pioneering: "First female recipient of Sena Medal for gallantry",
+    imageUrl: DEFAULT_FEMALE_OFFICER_IMG
   },
   {
     id: "8",
@@ -97,7 +108,8 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Vishisht Seva Medal", "High Altitude Medal", "Counter Terrorism Medal"],
     year: "2021",
     role: "Brigade Commander",
-    pioneering: "First female brigade commander in Kashmir Valley"
+    pioneering: "First female brigade commander in Kashmir Valley",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "9",
@@ -108,7 +120,8 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Aviation Badge", "Service Medal"],
     year: "2021",
     role: "Helicopter Pilot",
-    pioneering: "First female army aviation pilot"
+    pioneering: "First female army aviation pilot",
+    imageUrl: ARMY_LOGO_IMG
   },
   {
     id: "10",
@@ -119,11 +132,11 @@ export const womenInArmy: WomanOfficer[] = [
     awards: ["Vishisht Seva Medal", "Siachen Medal", "Operation Vijay Medal"],
     year: "2019",
     role: "Combat Surgeon",
-    pioneering: "First female surgeon at Siachen Base Camp"
+    pioneering: "First female surgeon at Siachen Base Camp",
+    imageUrl: DEFAULT_FEMALE_OFFICER_IMG
   }
 ];
 
 export const getWomanOfficerById = (id: string): WomanOfficer | undefined => {
   return womenInArmy.find(w => w.id === id);
 };
-

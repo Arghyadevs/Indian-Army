@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -23,10 +24,11 @@ module.exports = {
         'saffron': '#FF9933',
         'white': '#FFFFFF',
         'navy': '#000080',
+        'india-green': '#138808',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
       animation: {
         'candle-flicker': 'candleFlicker 2s ease-in-out infinite',
@@ -58,3 +60,4 @@ module.exports = {
   plugins: [],
 }
 
+export default config;
