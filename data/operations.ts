@@ -30,7 +30,7 @@ export const operations: MilitaryOperation[] = [
     outcomeSummary: "India successfully restored territorial integrity after 2 months of intense mountain warfare",
     significance: "Demonstrated India's resolve to protect its territorial integrity and military capability in high-altitude warfare",
     outcomeType: "success",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
+    imageUrl: "/Assets/battlefields/Kargil War-Tiger Hill capturing moment.jpg"
   },
   {
     id: "2",

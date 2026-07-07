@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Timeline from "@/components/Timeline";
 import StoryCard from "@/components/StoryCard";
+import CinematicEmbers from "@/components/CinematicEmbers";
 import { bravehearts } from "@/data/bravehearts";
 import { wars } from "@/data/wars";
 import { Calendar, ArrowRight } from "lucide-react";
@@ -36,6 +37,7 @@ export default function Home() {
               <img src="/hero-bg.png" alt="Indian Army Background" className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
               <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-black/80 to-black"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-saffron/15 via-transparent to-india-green/15"></div>
+              <CinematicEmbers />
             </div>
             <div className="max-w-4xl text-center relative z-10">
               <motion.div

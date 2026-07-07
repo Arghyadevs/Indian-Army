@@ -25,7 +25,7 @@ const regiments: Regiment[] = [
     specialties: ["Infantry", "Armoured Corps", "Artillery", "Engineers", "Signals"],
     famousBattles: ["Battle of Longewala", "Battle of Srinagar", "Tiger Hill"],
     motto: "Service Before Self",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
+    imageUrl: "/Assets/regiments/ADGPI_Indian_Army.webp"
   },
   {
     name: "Para Special Forces",
@@ -34,7 +34,7 @@ const regiments: Regiment[] = [
     specialties: ["Counter-terrorism", "Unconventional Warfare", "Special Reconnaissance"],
     famousBattles: ["Operation Vijay", "Surgical Strikes 2016"],
     motto: "Men of Steel",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
+    imageUrl: "/Assets/regiments/para-sf.jpg"
   },
   {
     name: "Gorkha Regiment",
@@ -43,7 +43,7 @@ const regiments: Regiment[] = [
     specialties: ["Mountain Warfare", "High Altitude Operations"],
     famousBattles: ["Battle of Kashmir 1947", "Kargil War"],
     motto: "Better to Die than to be a Coward",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
+    imageUrl: "/Assets/regiments/Gorkha Regisment.avif"
   },
   {
     name: "Sikh Regiment",
@@ -61,7 +61,7 @@ const regiments: Regiment[] = [
     specialties: ["Desert Warfare", "Mountain Warfare"],
     famousBattles: ["Battle of Tithwal", "Kargil Operations"],
     motto: "The Forward",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
+    imageUrl: "/Assets/regiments/Rajput Regimet.jpg"
   },
   {
     name: "Jat Regiment",
@@ -70,7 +70,7 @@ const regiments: Regiment[] = [
     specialties: ["Armored Corps", "Infantry"],
     famousBattles: ["Battle of Walong 1962", "1971 War"],
     motto: "For Valour",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
+    imageUrl: "/Assets/regiments/Jat Regiment.jpg"
   },
   {
     name: "Maratha Light Infantry",
@@ -79,7 +79,7 @@ const regiments: Regiment[] = [
     specialties: ["Jungle Warfare", "Counter-insurgency"],
     famousBattles: ["Battle of Poonch", "Kargil War"],
     motto: "Dharmo Rakshati Rakshitah",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
+    imageUrl: "/Assets/regiments/Maratha-Regiment.jpg"
   },
   {
     name: "Assam Regiment",
@@ -88,7 +88,7 @@ const regiments: Regiment[] = [
     specialties: ["Mountain Warfare", "Jungle Operations"],
     famousBattles: ["Battle of Gangasagar 1971", "Operation Vijay"],
     motto: "Anything Anywhere",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
+    imageUrl: "/Assets/regiments/Assam regiment.avif"
   }
 ];
 

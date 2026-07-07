@@ -9,25 +9,6 @@ export default function Timeline() {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <Shield className="w-6 h-6 text-army-green-500" />
-            <span className="text-army-green-500 text-sm tracking-widest uppercase">Historical Journey</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Timeline of Courage</h1>
-          <p className="text-white/60 max-w-2xl mx-auto">
-            Seven decades of defending the nation, from the first Kashmir war to modern-day operations. 
-            Each conflict shaped India's destiny and tested the mettle of its soldiers.
-          </p>
-        </motion.div>
-
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}

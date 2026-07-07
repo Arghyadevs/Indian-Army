@@ -25,7 +25,7 @@ const equipment: Equipment[] = [
     capabilities: ["120mm rifled gun", "Composite armor", "Thermal imaging sights", "Auxiliary power unit"],
     image: "🛡️",
     role: "Armoured Warfare",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
+    imageUrl: "/Assets/arjun-mbt.jpg"
   },
   {
     name: "T-90 Bhishma",
@@ -34,7 +34,7 @@ const equipment: Equipment[] = [
     capabilities: ["125mm smoothbore gun", "Kontakt-5 ERA", "Shtora countermeasures", "Night vision"],
     image: "🎖️",
     role: "Armoured Warfare",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
+    imageUrl: "/Assets/t90-bhishma.jpg"
   },
   {
     name: "BrahMos Missile",
@@ -43,7 +43,7 @@ const equipment: Equipment[] = [
     capabilities: ["Mach 2.8 speed", "300km range", "Precision guidance", "Land-sea launch"],
     image: "🚀",
     role: "Strategic Strike",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
+    imageUrl: "/Assets/brahmos-missile.jpg"
   },
   {
     name: "Rafale Fighter",
@@ -52,7 +52,7 @@ const equipment: Equipment[] = [
     capabilities: ["Meteor missiles", "SCALP cruise missile", "Helmet-mounted display", "Electronic warfare"],
     image: "✈️",
     role: "Air Superiority",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
+    imageUrl: "/Assets/rafale-fighter.jpeg"
   },
   {
     name: "MiG-29UPG",

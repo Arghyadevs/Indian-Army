@@ -15,6 +15,7 @@ interface Command {
   keyBases: string[];
   description: string;
   imageUrl?: string;
+  logoUrl?: string;
 }
 
 interface BattleLocation {
@@ -34,7 +35,8 @@ const commands: Command[] = [
     role: "Defends India's northern borders with Pakistan and China",
     keyBases: ["Udhampur", "Srinagar", "Leh", "Kargil"],
     description: "Responsible for the most sensitive and strategically important borders.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
+    imageUrl: "/Assets/battlefields/Kargil War-Tiger Hill capturing moment.jpg",
+    logoUrl: "/Assets/Comands Centre/Northern_Command,_Indian_Army.png"
   },
   {
     name: "Western Command",
@@ -43,7 +45,8 @@ const commands: Command[] = [
     role: "Defends western borders with Pakistan",
     keyBases: ["Jaipur", "Jaisalmer", "Bathinda", "Nagrota"],
     description: "Covers the border from Gujarat to Punjab, including the Thar Desert.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg"
+    imageUrl: "/Assets/t90-bhishma.jpg",
+    logoUrl: "/Assets/Comands Centre/Western_Command,_Indian_Army.svg.webp"
   },
   {
     name: "Eastern Command",
@@ -52,7 +55,8 @@ const commands: Command[] = [
     role: "Defends eastern borders and handles counter-insurgency",
     keyBases: ["Kolkata", "Jashpore", "Panagarh", "Sukna"],
     description: "Strategic command covering the India-Bangladesh border.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
+    imageUrl: "/Assets/regiments/para-sf.jpg",
+    logoUrl: "/Assets/Comands Centre/Eastern_Command,_Indian_Army.png"
   },
   {
     name: "Southern Command",
@@ -61,7 +65,8 @@ const commands: Command[] = [
     role: "Defends southern borders and handles coastal security",
     keyBases: ["Pune", "Bangalore", "Coimbatore", "Trivandrum"],
     description: "Focuses on the Western Ghats and coastal defense.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
+    imageUrl: "/Assets/arjun-mbt.jpg",
+    logoUrl: "/Assets/Comands Centre/Southern_Command,_Indian_Army.svg"
   },
   {
     name: "Central Command",
@@ -70,7 +75,8 @@ const commands: Command[] = [
     role: "Counter-insurgency and internal security",
     keyBases: ["Lucknow", "Jhansi", "Mhow", "Ramgarh"],
     description: "Strategic depth and internal security operations.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
+    imageUrl: "/Assets/armyman/Somnath Sharma.png",
+    logoUrl: "/Assets/Comands Centre/Central Command Lucknow, Uttar Pradesh.png"
   },
   {
     name: "South Western Command",
@@ -79,7 +85,8 @@ const commands: Command[] = [
     role: "Defends the western borders",
     keyBases: ["Jaipur", "Jodhpur", "Bikaner", "Ahmednagar"],
     description: "Covers the desert sector of the western border.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
+    imageUrl: "/Assets/brahmos-missile.jpg",
+    logoUrl: "/Assets/Comands Centre/South_Western_Command,_Indian_Army.png"
   },
   {
     name: "Army Training Command",
@@ -88,23 +95,24 @@ const commands: Command[] = [
     role: "Training and doctrine development",
     keyBases: ["Mhow", "Devlali", "Kamptee"],
     description: "Responsible for training all army personnel.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
+    imageUrl: "/Assets/rafale-fighter.jpeg",
+    logoUrl: "/Assets/Comands Centre/Army Training Command Shimla, Himachal Pradesh.svg"
   }
 ];
 
 const battleLocations: BattleLocation[] = [
-  { name: "Kargil", state: "Ladakh", coordinates: "34.5°N, 76.3°E", year: "1999", significance: "Kargil War - Operation Vijay" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/T-90MS_%28cropped%29.jpg/640px-T-90MS_%28cropped%29.jpg" },
-  { name: "Tiger Hill", state: "Jammu & Kashmir", coordinates: "34.1°N, 76.8°E", year: "1999", significance: "Iconic victory in Kargil War" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg" },
-  { name: "Srinagar", state: "Jammu & Kashmir", coordinates: "34.0°N, 74.8°E", year: "1947", significance: "First Kashmir War - Battle of Srinagar" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg" },
-  { name: "Poonch", state: "Jammu & Kashmir", coordinates: "33.7°N, 74.0°E", year: "1947", significance: "Siege of Poonch" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg" },
-  { name: "Asal Uttar", state: "Punjab", coordinates: "31.8°N, 75.0°E", year: "1965", significance: "Battle of Asal Uttar - Largest tank battle" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg" },
-  { name: "Longewala", state: "Rajasthan", coordinates: "27.0°N, 70.9°E", year: "1971", significance: "Battle of Longewala - 300 vs 2000 tanks" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg" },
-  { name: "Sylhet", state: "Bangladesh", coordinates: "24.9°N, 91.9°E", year: "1971", significance: "Mighty Swordsmen Division breakthrough" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg" },
-  { name: "Walong", state: "Arunachal Pradesh", coordinates: "28.4°N, 96.8°E", year: "1962", significance: "Battle of Walong - Sino-Indian War" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg" },
-  { name: "Tawang", state: "Arunachal Pradesh", coordinates: "27.9°N, 91.8°E", year: "1962", significance: "Battle of Tawang - Sino-Indian War" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg" },
-  { name: "Basantar River", state: "Jammu & Kashmir", coordinates: "32.6°N, 74.8°E", year: "1971", significance: "Battle of Basantar - Armored warfare" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg" },
-  { name: "Hailam", state: "Jammu & Kashmir", coordinates: "34.2°N, 74.4°E", year: "1948", significance: "Battle of Hailam - First Kashmir War" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg" },
-  { name: "Gangasagar", state: "West Bengal", coordinates: "22.2°N, 88.1°E", year: "1971", significance: "Battle of Gangasagar - PVC award" , imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg" }
+  { name: "Kargil", state: "Ladakh", coordinates: "34.5°N, 76.3°E", year: "1999", significance: "Kargil War - Operation Vijay" , imageUrl: "/Assets/battlefields/Kargil War-Tiger Hill capturing moment.jpg" },
+  { name: "Tiger Hill", state: "Jammu & Kashmir", coordinates: "34.1°N, 76.8°E", year: "1999", significance: "Iconic victory in Kargil War" , imageUrl: "/Assets/battlefields/Kargil War-Tiger Hill capturing moment.jpg" },
+  { name: "Srinagar", state: "Jammu & Kashmir", coordinates: "34.0°N, 74.8°E", year: "1947", significance: "First Kashmir War - Battle of Srinagar" , imageUrl: "/Assets/War Place/1947-48 First kashmir war.jpg" },
+  { name: "Poonch", state: "Jammu & Kashmir", coordinates: "33.7°N, 74.0°E", year: "1947", significance: "Siege of Poonch" , imageUrl: "/Assets/War Place/1947-48 First kashmir war.jpg" },
+  { name: "Asal Uttar", state: "Punjab", coordinates: "31.8°N, 75.0°E", year: "1965", significance: "Battle of Asal Uttar - Largest tank battle" , imageUrl: "/Assets/War Place/1965_Indo-Pak_War_DestroyedShermanTank.jpg" },
+  { name: "Longewala", state: "Rajasthan", coordinates: "27.0°N, 70.9°E", year: "1971", significance: "Battle of Longewala - 300 vs 2000 tanks" , imageUrl: "/Assets/War Place/1971 liberation war.jpeg" },
+  { name: "Sylhet", state: "Bangladesh", coordinates: "24.9°N, 91.9°E", year: "1971", significance: "Mighty Swordsmen Division breakthrough" , imageUrl: "/Assets/War Place/1971 liberation war.jpeg" },
+  { name: "Walong", state: "Arunachal Pradesh", coordinates: "28.4°N, 96.8°E", year: "1962", significance: "Battle of Walong - Sino-Indian War" , imageUrl: "/Assets/War Place/Indian_soldiers_on_patrol_during_the_1962_Sino-Indian_border_war.jpg" },
+  { name: "Tawang", state: "Arunachal Pradesh", coordinates: "27.9°N, 91.8°E", year: "1962", significance: "Battle of Tawang - Sino-Indian War" , imageUrl: "/Assets/War Place/Yangtse Clash (Tawang).jpg" },
+  { name: "Basantar River", state: "Jammu & Kashmir", coordinates: "32.6°N, 74.8°E", year: "1971", significance: "Battle of Basantar - Armored warfare" , imageUrl: "/Assets/War Place/1971 liberation war.jpeg" },
+  { name: "Hailam", state: "Jammu & Kashmir", coordinates: "34.2°N, 74.4°E", year: "1948", significance: "Battle of Hailam - First Kashmir War" , imageUrl: "/Assets/War Place/1947-48 First kashmir war.jpg" },
+  { name: "Gangasagar", state: "West Bengal", coordinates: "22.2°N, 88.1°E", year: "1971", significance: "Battle of Gangasagar - PVC award" , imageUrl: "/Assets/War Place/1971 liberation war.jpeg" }
 ];
 
 export default function CommandsPage() {
@@ -206,27 +214,21 @@ export default function CommandsPage() {
                   transition={{ duration: 0.5 }}
                   className="glass rounded-3xl p-8"
                 >
-                  <div className="w-full h-48 md:h-64 rounded-2xl overflow-hidden mb-6 relative border border-white/10">
-                    {selectedCommand.imageUrl ? (
-                      <img src={selectedCommand.imageUrl} alt={selectedCommand.name} className="w-full h-full object-cover" />
-                    ) : (
-                      <div className="w-full h-full bg-army-green-900/50 flex items-center justify-center">
-                        <Shield className="w-20 h-20 text-army-green-500/50" />
-                      </div>
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 flex items-center gap-4">
-                      <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-black/50 backdrop-blur-md border border-army-green-500/30 flex items-center justify-center">
-                        <Shield className="w-6 h-6 md:w-8 md:h-8 text-army-green-400" />
-                      </div>
-                      <div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white shadow-sm">{selectedCommand.name}</h2>
-                        <p className="text-army-green-400 md:text-lg font-medium">{selectedCommand.location}</p>
-                      </div>
+                  {/* Command Header with Insignia Logo */}
+                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8 p-6 bg-white/5 rounded-2xl border border-white/10">
+                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-black/40 border border-army-green-500/30 flex items-center justify-center p-3 shrink-0">
+                      {selectedCommand.logoUrl ? (
+                        <img src={selectedCommand.logoUrl} alt={`${selectedCommand.name} Logo`} className="w-full h-full object-contain" />
+                      ) : (
+                        <Shield className="w-12 h-12 text-army-green-500" />
+                      )}
+                    </div>
+                    <div className="text-center sm:text-left">
+                      <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">{selectedCommand.name}</h2>
+                      <p className="text-army-green-400 font-semibold md:text-lg mb-3">{selectedCommand.location}</p>
+                      <p className="text-white/70 text-sm leading-relaxed">{selectedCommand.description}</p>
                     </div>
                   </div>
-
-                  <p className="text-white/70 mb-6">{selectedCommand.description}</p>
 
                   <div className="grid md:grid-cols-2 gap-4 mb-6">
                     <div className="p-4 bg-white/5 rounded-2xl">

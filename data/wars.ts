@@ -18,7 +18,7 @@ export const wars: War[] = [
     keyBattles: ["Battle of Srinagar", "Operation of the Pirates", "Siege of Poonch"],
     outcome: "India secured approximately two-thirds of Kashmir, establishing the Line of Control.",
     casualties: "India: ~1,500 killed, Pakistan: ~6,000-8,000 killed",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
+    imageUrl: "/Assets/War Place/1947-48 First kashmir war.jpg"
   },
   {
     year: "1962",
@@ -28,7 +28,7 @@ export const wars: War[] = [
     keyBattles: ["Battle of Walong", "Battle of Tawang", "Namka Chu Valley"],
     outcome: "China declared a ceasefire and withdrew to pre-conflict lines, but retained Aksai Chin.",
     casualties: "India: ~1,383 killed, 3,000+ wounded, China: ~240 killed, 700+ wounded",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
+    imageUrl: "/Assets/War Place/Indian_soldiers_on_patrol_during_the_1962_Sino-Indian_border_war.jpg"
   },
   {
     year: "1965",
@@ -38,7 +38,7 @@ export const wars: War[] = [
     keyBattles: ["Battle of Asal Uttar", "Battle of Khem Karan", "Battle of Haji Pir Pass"],
     outcome: "Inconclusive military outcome, but diplomatic pressure led to a UN ceasefire. India gained strategically.",
     casualties: "India: ~3,000 killed, Pakistan: ~3,800 killed",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
+    imageUrl: "/Assets/War Place/1965_Indo-Pak_War_DestroyedShermanTank.jpg"
   },
   {
     year: "1971",
@@ -48,7 +48,7 @@ export const wars: War[] = [
     keyBattles: ["Battle of Longewala", "Battle of Ganganagar", "Battle of Sylhet", "Air operations over Dhaka"],
     outcome: "Decisive Indian victory, creation of Bangladesh, largest surrender of armed forces since WWII.",
     casualties: "India: ~2,500 killed, Pakistan: ~9,000 killed, ~93,000 captured",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg/640px-Gorkha_Rifles_marching_contingent_passes_through_the_Rajpath%2C_on_the_occasion_of_the_67th_Republic_Day_Parade_2016.jpg"
+    imageUrl: "/Assets/War Place/1971 liberation war.jpeg"
   },
   {
     year: "1999",
@@ -58,7 +58,7 @@ export const wars: War[] = [
     keyBattles: ["Battle of Tololing", "Battle of Kargil", "Operation Vijay", "Tiger Hill"],
     outcome: "India successfully evicted all infiltrators, restoring territorial integrity.",
     casualties: "India: ~527 killed, Pakistan: ~400-700 killed",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
+    imageUrl: "/Assets/battlefields/Kargil War-Tiger Hill capturing moment.jpg"
   },
   {
     year: "2001–02",
@@ -68,7 +68,7 @@ export const wars: War[] = [
     keyBattles: ["Border deployment", "Operation Vijayashree"],
     outcome: "Diplomatic pressure and international intervention de-escalated tensions.",
     casualties: "India: ~36 killed (terrorist attacks during deployment)",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Para_SF_Operative.jpg/640px-Para_SF_Operative.jpg"
+    imageUrl: "/Assets/War Place/Operation Parakram.jpg"
   },
   {
     year: "2016",
@@ -78,7 +78,7 @@ export const wars: War[] = [
     keyBattles: ["Surgical strikes in Poonch and Kupwara sectors"],
     outcome: "Destruction of terrorist infrastructure, clear message to Pakistan.",
     casualties: "Indian forces: 0 killed (surgical strike), 2 killed in subsequent shelling",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Indian_soldiers_in_Kargil.jpg/640px-Indian_soldiers_in_Kargil.jpg"
+    imageUrl: "/Assets/War Place/2016 surgical strike.jpg"
   },
   {
     year: "2019",
@@ -88,7 +88,37 @@ export const wars: War[] = [
     keyBattles: ["Balakot airstrike"],
     outcome: "Destruction of terrorist training camp, escalation of tensions, eventual de-escalation.",
     casualties: "No Indian casualties, exact enemy casualties disputed",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arjun_MBT_at_RDC_2015_%28cropped%29.jpg/640px-Arjun_MBT_at_RDC_2015_%28cropped%29.jpg"
+    imageUrl: "/Assets/War Place/Balakot air strike.avif"
+  },
+  {
+    year: "2020",
+    title: "Galwan Valley Skirmish",
+    shortDesc: "Fierce hand-to-hand combat in eastern Ladakh.",
+    fullDesc: "In June 2020, Indian and Chinese troops engaged in a violent hand-to-hand skirmish in the Galwan Valley, eastern Ladakh, during a standoff along the Line of Actual Control (LAC). Twenty Indian soldiers, including the commanding officer of the 16 Bihar Regiment, were killed in action fighting valiantly without firearms.",
+    keyBattles: ["Galwan Valley Clash"],
+    outcome: "Strategic standoff along the LAC followed by prolonged military and diplomatic talks.",
+    casualties: "India: 20 killed, China: Undisclosed (estimated significantly higher)",
+    imageUrl: "/Assets/War Place/Galwan war memorial.png"
+  },
+  {
+    year: "2022",
+    title: "Yangtse Clash (Tawang)",
+    shortDesc: "Thwarting Chinese incursions in Arunachal Pradesh.",
+    fullDesc: "In December 2022, Chinese PLA troops attempted to transgress the Line of Actual Control (LAC) in the Yangtse area of the Tawang sector in Arunachal Pradesh. The Indian Army responded firmly and resolutely, forcing the Chinese troops to retreat to their positions in a physical melee.",
+    keyBattles: ["Yangtse Area Standoff"],
+    outcome: "Successful defense of the LAC; PLA troops forced back to their posts.",
+    casualties: "Minor injuries on both sides (No fatalities)",
+    imageUrl: "/Assets/War Place/Yangtse Clash (Tawang).jpg"
+  },
+  {
+    year: "2025",
+    title: "Operation Sindoor",
+    shortDesc: "Targeted strikes against terror infrastructure.",
+    fullDesc: "In May 2025, the Indian Armed Forces launched 'Operation Sindoor' in response to a deadly terror attack in Pahalgam. It involved precise, multi-domain strikes against terror camps and training facilities across the LoC and within Pakistan. The operation was named 'Sindoor' as a poignant tribute to the families of the victims, successfully neutralizing key terror targets.",
+    keyBattles: ["Cross-border targeted strikes"],
+    outcome: "Successful neutralization of terror targets followed by border de-escalation measures.",
+    casualties: "Significant casualties among terror operatives",
+    imageUrl: "/Assets/War Place/Operation Sindoor.webp"
   }
 ];
 

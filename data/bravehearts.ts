@@ -34,7 +34,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Rajasthan",
     quote: "Retreat is not an option when your back is against the mountains.",
     war: "1962 Sino-Indian War",
-    imageUrl: "https://bioconblog.com/wp-content/uploads/2020/08/maj-shaitan-singh1.jpg" // Updated to Biocon Blog image
+    imageUrl: "/Assets/armyman/Major Shaitan Singh.png"
   },
   {
     id: "2",
@@ -49,7 +49,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Ranchi, Bihar (now Jharkhand)",
     quote: "The enemy had many guns, but we had one purpose.",
     war: "1971 Indo-Pak War",
-    imageUrl: "https://www.honourpoint.in/wp-content/uploads/2016/12/LNk-Albert-Ekka-PVC.jpg"
+    imageUrl: "/Assets/armyman/Lance_Naik_Albert_Ekka.png"
   },
   {
     id: "3",
@@ -65,7 +65,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Pune, Maharashtra",
     quote: "The tank is still running, sir. I'm going to take out those guns.",
     war: "1971 Indo-Pak War",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Arun_Khetarpal.jpg/440px-Arun_Khetarpal.jpg"
+    imageUrl: "/Assets/armyman/arun-khetrapal.jpg"
   },
   {
     id: "4",
@@ -80,7 +80,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Uttar Pradesh",
     quote: "For the flag, for the nation, for the people who trusted us.",
     war: "1965 Indo-Pak War",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Abdul_Hamid_PVC.jpg/440px-Abdul_Hamid_PVC.jpg"
+    imageUrl: "/Assets/armyman/Grenadier_Abdul_Hamid.jpeg"
   },
   {
     id: "5",
@@ -95,7 +95,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Uttarakhand",
     quote: "We shall not fail, for the tricolor waits to be hoisted.",
     war: "1999 Kargil War",
-    imageUrl: "https://static.toiimg.com/thumb/msid-69688913,width-400,resizemode-4/69688913.jpg"
+    imageUrl: "/Assets/armyman/Major_Rajesh_Singh_Adhikari.jpg"
   },
   {
     id: "6",
@@ -111,7 +111,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Jammu, Jammu and Kashmir",
     quote: "Yeh dil maange more! (My heart wants more!)",
     war: "1999 Kargil War",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Vikram_Batra_PVC.jpg"
+    imageUrl: "/Assets/armyman/Captain_Vikram_Batra.png"
   },
   {
     id: "7",
@@ -126,7 +126,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Uttar Pradesh",
     quote: "Where there is duty, there is no fear.",
     war: "1947-48 First Kashmir War",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Jadunath_Singh.jpg/440px-Jadunath_Singh.jpg"
+    imageUrl: "/Assets/armyman/Naik-Jadu-Nath-Singh.jpg"
   },
   {
     id: "8",
@@ -141,7 +141,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Punjab",
     quote: "The Sikh does not retreat.",
     war: "1947-48 First Kashmir War",
-    imageUrl: "https://static.toiimg.com/thumb/msid-69688913,width-400,resizemode-4/69688913.jpg"
+    imageUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: "9",
@@ -156,7 +156,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Saharanpur, Uttar Pradesh",
     quote: "The mission comes first, the people come first.",
     war: "1999 Kargil War",
-    imageUrl: "https://static.toiimg.com/thumb/msid-69688913,width-400,resizemode-4/69688913.jpg"
+    imageUrl: "/Assets/armyman/Flight Lieutenant Ajay Ahuja.png"
   },
   {
     id: "10",
@@ -172,10 +172,10 @@ export const bravehearts: Braveheart[] = [
     hometown: "Uttarakhand",
     quote: "Rakshaks, follow me!",
     war: "1999 Kargil War",
-    imageUrl: "https://static.toiimg.com/thumb/msid-69688913,width-400,resizemode-4/69688913.jpg"
+    imageUrl: "/Assets/armyman/Lt. Col. Manoj Kumar Pandey.jpeg"
   },
   
-  // Additional 15 heroes (total 25)
+  // Additional 13 heroes (total 23 after removals)
   {
     id: "11",
     name: "Gunner Karam Singh",
@@ -189,7 +189,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Punjab",
     quote: "The gun must fire as long as I breathe.",
     war: "1947-48 First Kashmir War",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Karam_Singh.jpg/440px-Karam_Singh.jpg"
+    imageUrl: "/Assets/armyman/Gunner Karam Singh.jpeg"
   },
   {
     id: "12",
@@ -204,7 +204,7 @@ export const bravehearts: Braveheart[] = [
     hometown: "Uttarakhand",
     quote: "The nation needs to be defended, not by words but by action.",
     war: "1947-48 First Kashmir War",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Major_Somnath_Sharma_PVC.jpg/440px-Major_Somnath_Sharma_PVC.jpg"
+    imageUrl: "/Assets/armyman/Somnath Sharma.png"
   },
   {
     id: "13",
@@ -238,51 +238,6 @@ export const bravehearts: Braveheart[] = [
   },
   {
     id: "15",
-    name: "Sergeant Oman Gurung",
-    rank: "Sergeant",
-    regiment: "Gorkha Rifles",
-    yearOfDeath: "1965",
-    operation: "Battle of Khem Karan",
-    story: "Sergeant Oman Gurung was part of a small unit that held off a much larger Pakistani force at Khem Karan. His accurate fire and strategic positioning caused heavy enemy casualties.",
-    medals: ["Param Vir Chakra"],
-    age: 26,
-    hometown: "West Bengal (Gorkha community)",
-    quote: "The Gorkha stands firm.",
-    war: "1965 Indo-Pak War",
-    imageUrl: ARMY_LOGO_IMG
-  },
-  {
-    id: "16",
-    name: "Lt. Col. Hawaldar Singh",
-    rank: "Lieutenant Colonel",
-    regiment: "Sikh Regiment",
-    yearOfDeath: "1971",
-    operation: "Battle of Chawinda",
-    story: "Lt. Col. Hawaldar Singh commanded his battalion during the intense battles around Chawinda in the 1971 war. His tactical brilliance and personal bravery led to the destruction of multiple enemy tanks.",
-    medals: ["Maha Vir Chakra"],
-    age: 38,
-    hometown: "Punjab",
-    quote: "Attack is the best defense.",
-    war: "1971 Indo-Pak War",
-    imageUrl: ARMY_LOGO_IMG
-  },
-  {
-    id: "17",
-    name: "Major Shyam Kumar",
-    rank: "Major",
-    regiment: "Madhya Pradesh",
-    yearOfDeath: "1971",
-    operation: "Battle of Longewala",
-    story: "Major Shyam Kumar was part of the Indian force that defended Longewala against a massive Pakistani tank attack. His accurate artillery fire and coordination were crucial to the victory.",
-    medals: ["Vir Chakra"],
-    age: 28,
-    hometown: "Madhya Pradesh",
-    quote: "Small force, big victory.",
-    war: "1971 Indo-Pak War",
-    imageUrl: DEFAULT_MALE_OFFICER_IMG
-  },
-  {
-    id: "18",
     name: "Flight Lieutenant Nirmal Jit Singh Sekhon",
     rank: "Flight Lieutenant",
     regiment: "Indian Air Force",
@@ -294,10 +249,10 @@ export const bravehearts: Braveheart[] = [
     hometown: "Punjab",
     quote: "The sky is my battlefield.",
     war: "1965 Indo-Pak War",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/en/7/7b/Kuldip_Singh_Chandpuri.jpg"
+    imageUrl: "/Assets/armyman/Nirmal_Jit_singh.png"
   },
   {
-    id: "19",
+    id: "16",
     name: "Lt. Col. Ranjit Singh Dayal",
     rank: "Lieutenant Colonel",
     regiment: "Armoured Corps",
@@ -312,22 +267,7 @@ export const bravehearts: Braveheart[] = [
     imageUrl: ARMY_LOGO_IMG
   },
   {
-    id: "20",
-    name: "Captain James Andrew Nicholls",
-    rank: "Captain",
-    regiment: "1 Gorkha Rifles",
-    yearOfDeath: "1945",
-    operation: "World War II - Kohima",
-    story: "Captain James Nicholls led his company during the Battle of Kohima, one of the fiercest battles of World War II. His defense of the 'Defense of Kohima' position was legendary.",
-    medals: ["Victoria Cross"],
-    age: 29,
-    hometown: "British India (Scottish)",
-    quote: "We shall not surrender.",
-    war: "World War II",
-    imageUrl: DEFAULT_MALE_OFFICER_IMG
-  },
-  {
-    id: "21",
+    id: "17",
     name: "General Kodandera M. Cariappa",
     rank: "Field Marshal",
     regiment: "Indian Army",
@@ -339,10 +279,10 @@ export const bravehearts: Braveheart[] = [
     hometown: "Karnataka",
     quote: "The Indian Army is a disciplined force.",
     war: "Multiple",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Field_Marshal_K._M._Cariappa.jpg/440px-Field_Marshal_K._M._Cariappa.jpg"
+    imageUrl: "/Assets/armyman/field_marshal_km_cariappa-pp.jpg"
   },
   {
-    id: "22",
+    id: "18",
     name: "General Sam Manekshaw",
     rank: "Field Marshal",
     regiment: "Indian Army",
@@ -354,10 +294,10 @@ export const bravehearts: Braveheart[] = [
     hometown: "Punjab",
     quote: "Gentlemen, I have only one request. Let me do it in my own way.",
     war: "Multiple",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Sam_Manekshaw.jpg/440px-Sam_Manekshaw.jpg"
+    imageUrl: "/Assets/armyman/General Sam Manekshaw.webp"
   },
   {
-    id: "23",
+    id: "19",
     name: "Major General Premindra Singh",
     rank: "Major General",
     regiment: "Armoured Corps",
@@ -369,37 +309,22 @@ export const bravehearts: Braveheart[] = [
     hometown: "Punjab",
     quote: "Victory belongs to the bold.",
     war: "1965 Indo-Pak War",
-    imageUrl: ARMY_LOGO_IMG
+    imageUrl: "/Assets/armyman/Major General Premindra Singh.png"
   },
   {
-    id: "24",
-    name: "Naik Jadunath Singh",
-    rank: "Naik",
-    regiment: "Rajput Regiment",
-    yearOfDeath: "1965",
-    operation: "Battle of Gujarat",
-    story: "Naik Jadunath Singh held a post at Gujarat with just 10 men against a Pakistani force of 300. He killed 37 enemy soldiers before being martyred.",
-    medals: ["Param Vir Chakra"],
-    age: 32,
-    hometown: "Uttar Pradesh",
-    quote: "Hold your ground.",
-    war: "1965 Indo-Pak War",
-    imageUrl: ARMY_LOGO_IMG
-  },
-  {
-    id: "25",
-    name: "Captain Vikram Bajpai",
-    rank: "Captain",
-    regiment: "Naga Regiment",
+    id: "20",
+    name: "Colonel Bikumalla Santosh Babu",
+    rank: "Colonel",
+    regiment: "16 Bihar Regiment",
     yearOfDeath: "2020",
     operation: "Galwan Valley",
-    story: "Captain Vikram Bajpai led his team during the Galwan Valley clash with Chinese troops. He fought bravely and made the ultimate sacrifice while defending India's territorial integrity.",
-    medals: ["Ashoka Chakra"],
-    age: 26,
-    hometown: "Uttar Pradesh",
-    quote: "For the motherland.",
+    story: "Colonel B. Santosh Babu was the Commanding Officer of the 16 Bihar Regiment. During the Galwan Valley standoff, he led his troops from the front in a violent hand-to-hand skirmish with Chinese forces. He fought valiantly and made the supreme sacrifice defending India's sovereignty.",
+    medals: ["Maha Vir Chakra"],
+    age: 37,
+    hometown: "Suryapet, Telangana",
+    quote: "Supreme sacrifice in the line of duty.",
     war: "Modern Operations",
-    imageUrl: DEFAULT_MALE_OFFICER_IMG
+    imageUrl: "/Assets/armyman/Colonel Bikumalla Santosh Babu.jpg"
   }
 ];
 

@@ -73,7 +73,7 @@ export const womenInArmy: WomanOfficer[] = [
     year: "2016",
     role: "Medical Corps Chief",
     pioneering: "First female Lieutenant General in Indian Army",
-    imageUrl: ARMY_LOGO_IMG
+    imageUrl: "/Assets/armyman/VAdm_Punita_Arora.jpg"
   },
   {
     id: "6",

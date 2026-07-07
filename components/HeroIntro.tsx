@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import CinematicEmbers from "./CinematicEmbers";
 
 interface HeroIntroProps {
   onEnter: () => void;
@@ -22,22 +23,8 @@ export default function HeroIntro({ onEnter }: HeroIntroProps) {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-army-green-900/20 blur-[120px]"
       />
 
-      {/* Stars */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(50)].map((_, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: Math.random() * 0.5 + 0.2, scale: 1 }}
-            transition={{ duration: Math.random() * 2 + 1, delay: Math.random() * 2 }}
-            className="absolute w-1 h-1 bg-white rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-          />
-        ))}
-      </div>
+      {/* Cinematic Embers */}
+      <CinematicEmbers />
 
       {/* Main Content */}
       <div className="relative z-10 text-center px-6">
