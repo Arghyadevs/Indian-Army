@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/swc-darwin-arm64": "^16.2.10",
     "autoprefixer": "^10.4.23",
     "firebase": "^10.12.2",
     "framer-motion": "^11.2.0",
